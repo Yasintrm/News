@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3CAC62A157C831700051275 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAC629157C831700051275 /* UIKit.framework */; };
+		A3CAC62C157C831700051275 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAC62B157C831700051275 /* Foundation.framework */; };
+		A3CAC62E157C831700051275 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3CAC62D157C831700051275 /* CoreGraphics.framework */; };
+		A3CAC634157C831700051275 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3CAC632157C831700051275 /* InfoPlist.strings */; };
+		A3CAC636157C831700051275 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CAC635157C831700051275 /* main.m */; };
+		A3CAC63A157C831700051275 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3CAC639157C831700051275 /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A3CAC625157C831700051275 /* News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = News.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CAC629157C831700051275 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A3CAC62B157C831700051275 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A3CAC62D157C831700051275 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A3CAC631157C831700051275 /* News-Info.plist */ = {isa = PBXFileReference; path = "News-Info.plist"; sourceTree = "<group>"; };
+		A3CAC633157C831700051275 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A3CAC635157C831700051275 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3CAC637157C831700051275 /* News-Prefix.pch */ = {isa = PBXFileReference; path = "News-Prefix.pch"; sourceTree = "<group>"; };
+		A3CAC638157C831700051275 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		A3CAC639157C831700051275 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3CAC622157C831700051275 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CAC62A157C831700051275 /* UIKit.framework in Frameworks */,
+				A3CAC62C157C831700051275 /* Foundation.framework in Frameworks */,
+				A3CAC62E157C831700051275 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3CAC61A157C831700051275 = {
+			isa = PBXGroup;
+			children = (
+				A3CAC62F157C831700051275 /* News */,
+				A3CAC628157C831700051275 /* Frameworks */,
+				A3CAC626157C831700051275 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3CAC626157C831700051275 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3CAC625157C831700051275 /* News.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3CAC628157C831700051275 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3CAC629157C831700051275 /* UIKit.framework */,
+				A3CAC62B157C831700051275 /* Foundation.framework */,
+				A3CAC62D157C831700051275 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3CAC62F157C831700051275 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				A3CAC638157C831700051275 /* AppDelegate.h */,
+				A3CAC639157C831700051275 /* AppDelegate.m */,
+				A3CAC630157C831700051275 /* Supporting Files */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		A3CAC630157C831700051275 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A3CAC631157C831700051275 /* News-Info.plist */,
+				A3CAC632157C831700051275 /* InfoPlist.strings */,
+				A3CAC635157C831700051275 /* main.m */,
+				A3CAC637157C831700051275 /* News-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3CAC624157C831700051275 /* News */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CAC63D157C831700051275 /* Build configuration list for PBXNativeTarget "News" */;
+			buildPhases = (
+				A3CAC621157C831700051275 /* Sources */,
+				A3CAC622157C831700051275 /* Frameworks */,
+				A3CAC623157C831700051275 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = News;
+			productName = News;
+			productReference = A3CAC625157C831700051275 /* News.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3CAC61C157C831700051275 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = A3CAC61F157C831700051275 /* Build configuration list for PBXProject "News" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A3CAC61A157C831700051275;
+			productRefGroup = A3CAC626157C831700051275 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3CAC624157C831700051275 /* News */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3CAC623157C831700051275 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CAC634157C831700051275 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3CAC621157C831700051275 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CAC636157C831700051275 /* main.m in Sources */,
+				A3CAC63A157C831700051275 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3CAC632157C831700051275 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3CAC633157C831700051275 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3CAC63B157C831700051275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3CAC63C157C831700051275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3CAC63E157C831700051275 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "News/News-Prefix.pch";
+				INFOPLIST_FILE = "News/News-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A3CAC63F157C831700051275 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "News/News-Prefix.pch";
+				INFOPLIST_FILE = "News/News-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3CAC61F157C831700051275 /* Build configuration list for PBXProject "News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CAC63B157C831700051275 /* Debug */,
+				A3CAC63C157C831700051275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CAC63D157C831700051275 /* Build configuration list for PBXNativeTarget "News" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CAC63E157C831700051275 /* Debug */,
+				A3CAC63F157C831700051275 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3CAC61C157C831700051275 /* Project object */;
+}
