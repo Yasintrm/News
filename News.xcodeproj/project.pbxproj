@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		A309900C1596A031007F90B5 /* TwitCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A309900B1596A031007F90B5 /* TwitCell.m */; };
 		A30990101596A053007F90B5 /* TwitView.m in Sources */ = {isa = PBXBuildFile; fileRef = A309900F1596A053007F90B5 /* TwitView.m */; };
-		A3324C2A158F055D00F57BA2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A3324C29158F055D00F57BA2 /* Default@2x.png */; };
-		A3324C2D158F056F00F57BA2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A3324C2C158F056F00F57BA2 /* Default.png */; };
 		A348DFEF15A10B7800C296E8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A348DFEE15A10B7800C296E8 /* SystemConfiguration.framework */; };
 		A35BADA0159D71220090A626 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A35BAD9F159D71220090A626 /* MBProgressHUD.m */; };
 		A3908E7815842BC400FAE31B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3908E7715842BC400FAE31B /* MainViewController.m */; };
@@ -55,8 +53,6 @@
 		A309900E1596A053007F90B5 /* TwitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitView.h; sourceTree = "<group>"; };
 		A309900F1596A053007F90B5 /* TwitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitView.m; sourceTree = "<group>"; };
 		A30990151596E80E007F90B5 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
-		A3324C29158F055D00F57BA2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
-		A3324C2C158F056F00F57BA2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		A348DFEE15A10B7800C296E8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A35BAD9E159D71220090A626 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		A35BAD9F159D71220090A626 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
@@ -155,8 +151,6 @@
 		A348DFF515A1446400C296E8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				A3324C2C158F056F00F57BA2 /* Default.png */,
-				A3324C29158F055D00F57BA2 /* Default@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -392,8 +386,6 @@
 			files = (
 				A3CAC634157C831700051275 /* InfoPlist.strings in Resources */,
 				A39E8C6915808737003ADD32 /* Main.storyboard in Resources */,
-				A3324C2A158F055D00F57BA2 /* Default@2x.png in Resources */,
-				A3324C2D158F056F00F57BA2 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
