@@ -15,7 +15,7 @@
 @end
 
 @implementation TwitCell
-@synthesize modelData = _modelData;
+
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

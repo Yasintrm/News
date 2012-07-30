@@ -7,8 +7,6 @@
 @end
 
 @implementation Helper
-@synthesize data = _data;
-@synthesize sharedCache = _sharedCache;
 
 static Helper* m_helper;
 
@@ -90,19 +88,19 @@ static Helper* m_helper;
     [self requestJsonWithUrl:url CallBack:^(NSDictionary *json, NSError *error) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSMutableArray *dataArray = [[NSMutableArray alloc] init];
-            NSArray *results = [json objectForKey:@"results"];
+            NSArray *results = json[@"results"];
             float cellWidth = [UIScreen mainScreen].bounds.size.width;
             float textContentWidth = cellWidth - (IMAGE_SIZE + 3 * MARGIN);
             float textStartIndex = IMAGE_SIZE + MARGIN * 2.0f;
             
             for (NSDictionary *item in results) {
                 Twit *twit = [[Twit alloc] init];
-                twit.id = [item objectForKey:@"id"];
-                twit.created_at = [item objectForKey:@"created_at"];
-                twit.from_user = [item objectForKey:@"from_user"];
-                twit.from_user_name = [item objectForKey:@"from_user_name"];
-                twit.profile_image_url = [[item objectForKey:@"profile_image_url"] stringByReplacingOccurrencesOfString:@"normal" withString:@"bigger"];
-                twit.text = [item objectForKey:@"text"];
+                twit.id = item[@"id"];
+                twit.created_at = item[@"created_at"];
+                twit.from_user = item[@"from_user"];
+                twit.from_user_name = item[@"from_user_name"];
+                twit.profile_image_url = [item[@"profile_image_url"] stringByReplacingOccurrencesOfString:@"normal" withString:@"bigger"];
+                twit.text = item[@"text"];
                 
                 CGSize sizeTitleFrame = [twit.from_user_name sizeWithFont:[UIFont boldSystemFontOfSize:FONT_SIZE_SMALL] constrainedToSize:CGSizeMake(textContentWidth, FONT_SIZE_SMALL) lineBreakMode:UILineBreakModeHeadTruncation];
                 

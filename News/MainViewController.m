@@ -10,14 +10,12 @@
 #import "Helper.h"
 
 @implementation MainViewController
-@synthesize searchBarDelegate;
-@synthesize tableViewDelegate;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
-    [[Helper sharedInstance] addObserver:tableViewDelegate forKeyPath:@"data" options:NSKeyValueObservingOptionNew context:nil];
+    [[Helper sharedInstance] addObserver:_tableViewDelegate forKeyPath:@"data" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)viewDidUnload

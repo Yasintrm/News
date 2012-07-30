@@ -23,7 +23,7 @@
 #pragma mark optional UITableView method
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    Twit *twit = [data objectAtIndex:indexPath.row];
+    Twit *twit = data[indexPath.row];
     return twit.cellHeight;
 }
 
@@ -37,13 +37,13 @@
     if (cell == nil) {
         cell = [[TwitCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
     }
-    Twit *modelData = [data objectAtIndex:indexPath.row];
+    Twit *modelData = data[indexPath.row];
     
     if (!modelData.profileImg) {
         
         [m_helper requestImageWithUrl:modelData.profile_image_url CallBack:^(UIImage *image, NSError *error) {
             TwitCell* cell = (TwitCell*)[tableView cellForRowAtIndexPath:indexPath];
-            Twit *modelData = [data objectAtIndex:indexPath.row];
+            Twit *modelData = data[indexPath.row];
             modelData.profileImg = image;
             cell.modelData = modelData;
         }];
@@ -63,7 +63,7 @@
     if (!m_helper) {
         m_helper = object;
     }
-    data = [change objectForKey:NSKeyValueChangeNewKey];
+    data = change[NSKeyValueChangeNewKey];
     [m_tableView reloadData];
 }
 

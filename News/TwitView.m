@@ -10,7 +10,6 @@
 #import "Constants.h"
 
 @implementation TwitView
-@synthesize modelData = _modelData;
 
 - (id)initWithFrame:(CGRect)frame
 {

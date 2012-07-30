@@ -9,16 +9,4 @@
 #import "Twit.h"
 
 @implementation Twit
-
-@synthesize id;
-@synthesize created_at;
-@synthesize from_user;
-@synthesize from_user_name;
-@synthesize profile_image_url;
-@synthesize text;
-@synthesize profileImgUrl;
-@synthesize profileImg;
-@synthesize cellHeight;
-@synthesize rectTextFrame;
-@synthesize rectTitleFrame;
 @end
